@@ -1,0 +1,15 @@
+<div class="container" style="text-align:left">
+  <h1>
+    {{title}}
+  </h1>
+  <ul class="list-group">
+    <app-post-list-item *ngFor="let p of posts; let i=index"
+                            [postIndex]="i"
+                            [postTitle]="p.title"
+                            [postContent]="p.content"
+                            [postLoveIts]="p.loveIts"
+                            [postDate]="p.dateFirebase"
+                            >
+    </app-post-list-item>
+  </ul>
+</div>
